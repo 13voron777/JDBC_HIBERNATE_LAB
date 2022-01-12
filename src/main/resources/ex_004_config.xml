@@ -39,7 +39,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="ex_004_get_some_fields.entity.Author" />
-
+        <mapping class="ex_004_get_some_fields.entity.Book" />
 
 
     </session-factory>

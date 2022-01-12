@@ -1,7 +1,5 @@
 package ex_001_select_and_insert;
 
-
-
 import ex_001_select_and_insert.entity.Author;
 
 import java.util.List;
@@ -14,29 +12,24 @@ public class Main {
     public static void main(String[] args) {
         AuthorHelper ah = new AuthorHelper();
 
+        Author author1 = new Author();
+        author1.setName("Lermontov");
 
-        Author author = new Author();
-        author.setName("Lermontov");
-
-        ah.addAuthor(author);
+        ah.addAuthor(author1);
 
         Author author2 = new Author();
         author2.setName("Pushkin");
 
         ah.addAuthor(author2);
 
+        List<Author> authors = ah.getAuthorList();
 
+        for (Author a : authors) {
+            System.out.println(a.getId() + " " + a.getName());
+        }
 
-//        List<Author> authors = ah.getAuthorList();
-//
-//        for (Author a : authors) {
-//            System.out.println(a.getId() + " " + a.getName());
-//        }
-//
-//
-//        Author author3 = ah.getAuthorById(2);
-//        System.out.println(author3);
-
+        Author author3 = ah.getAuthorById(2);
+        System.out.println(author3);
     }
 
 }

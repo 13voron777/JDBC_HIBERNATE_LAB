@@ -40,7 +40,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="ex_002_insert_and_update.entity.Author" />
-
+        <mapping class="ex_002_insert_and_update.entity.Book" />
 
 
     </session-factory>

@@ -10,23 +10,17 @@ public class Main {
     public static void main(String[] args) {
         AuthorHelper ah = new AuthorHelper();
 
-        Author author = new Author();
+        /*Author author = new Author();
         author.setName("Michael");
         author.setLastName("Bulgakov");
 
-        ah.addAuthor(author);
+        ah.addAuthor(author);*/
 
-
-
-//        Author author2 = ah.getAuthorById(2);
-//        System.out.println(author2);
-//
-//        author2.setLastName("Alexander");
-//        ah.addAuthor(author2);
-//
-//
-//        ah.addAuthor(null);
-
+        Author author2 = ah.getAuthorById(11);
+        System.out.println(author2);
+        author2.setLastName("Alexander");
+        ah.addAuthor(author2);
+        //ah.addAuthor(null);
     }
 
 }

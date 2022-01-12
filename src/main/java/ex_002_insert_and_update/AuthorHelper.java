@@ -63,10 +63,10 @@ public class AuthorHelper {
 
         session.beginTransaction();
 
-//        Author au1 = session.get(Author.class, 2l);
-//        au1.setName("Alex");
-//        au1.setLastName("Pushkin");
-//        session.save(au1);
+        Author au1 = session.get(Author.class, 11l);
+        au1.setName("Alex");
+        au1.setLastName("Pushkin");
+        session.save(au1);
 
         session.save(author); // сгенерит ID и вставит в объект
 
